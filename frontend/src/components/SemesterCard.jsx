@@ -1,15 +1,19 @@
-function SemesterCard({ semester, selected, onClick }) {
+import SubjectCard from "./SubjectCard";
+
+function SemesterCard({ semester }) {
   return (
-    <button
-      onClick={onClick}
-      className={`rounded-xl px-6 py-4 font-semibold transition ${
-        selected
-          ? "bg-blue-600 text-white"
-          : "bg-slate-800 text-gray-300 hover:bg-slate-700"
-      }`}
-    >
-      {semester}
-    </button>
+    <div className="bg-gray-100 rounded-xl p-6 mb-8">
+      <h2 className="text-2xl font-bold mb-5">
+        {semester.semester}
+      </h2>
+
+      {semester.subjects.map((subject, index) => (
+        <SubjectCard
+          key={index}
+          subject={subject}
+        />
+      ))}
+    </div>
   );
 }
 

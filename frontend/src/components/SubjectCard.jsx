@@ -1,27 +1,16 @@
-import { FaDownload, FaEye } from "react-icons/fa";
-
 function SubjectCard({ subject }) {
   return (
-    <div className="bg-slate-900 rounded-2xl p-6 border border-slate-800">
-
-      <h2 className="text-white text-xl font-bold">
+    <div className="flex justify-between items-center bg-white p-4 rounded-lg shadow hover:shadow-lg transition mb-3">
+      <h3 className="font-semibold text-gray-700">
         {subject.name}
-      </h2>
+      </h3>
 
-      <div className="flex gap-4 mt-6">
-
-        <button className="bg-blue-600 px-5 py-2 rounded-lg text-white flex items-center gap-2">
-          <FaEye />
-          Preview
-        </button>
-
-        <button className="bg-green-600 px-5 py-2 rounded-lg text-white flex items-center gap-2">
-          <FaDownload />
-          Download
-        </button>
-
-      </div>
-
+      <a
+        href={subject.pdf}
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+      >
+        Download
+      </a>
     </div>
   );
 }
