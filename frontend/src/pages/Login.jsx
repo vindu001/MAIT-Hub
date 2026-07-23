@@ -1,0 +1,17 @@
+import Navbar from "../components/Navbar";
+
+function Login() {
+  return (
+    <>
+      <Navbar />
+
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
+        <h1 className="text-5xl font-bold text-white">
+          🔐 Login Page
+        </h1>
+      </div>
+    </>
+  );
+}
+
+export default Login;
