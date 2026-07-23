@@ -1,4 +1,4 @@
-const branches = [
+ const branches = [
   {
     id: 1,
     name: "Information Technology",
@@ -26,7 +26,7 @@ const branches = [
   {
     id: 5,
     name: "Electrical Engineering",
-    short: "EE",
+    short: "EEE",
     icon: "⚡",
   },
   {
@@ -34,12 +34,6 @@ const branches = [
     name: "Mechanical Engineering",
     short: "ME",
     icon: "⚙️",
-  },
-  {
-    id: 7,
-    name: "Civil Engineering",
-    short: "CE",
-    icon: "🏗️",
   },
 ];
 
